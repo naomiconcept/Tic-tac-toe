@@ -148,7 +148,7 @@ def check_rows():
 
     return
 
-
+# a function to check diagonals
 def check_diagonals():
     # set up global variables
     global game_still_going
@@ -169,7 +169,7 @@ def check_diagonals():
 
     return
 
-
+# a function to check colums
 def check_colums():
     # set up global variables
     global game_still_going
@@ -194,7 +194,7 @@ def check_colums():
 
     return
 
-
+# a function to check if there is a tie
 def check_if_tie():
     # declaring game still going
     global game_still_going
@@ -204,7 +204,7 @@ def check_if_tie():
     
     return
 
-
+# a function for players to take turns
 def flip_player():
     # global variables we need
     global current_player
@@ -218,6 +218,7 @@ def flip_player():
         current_player = "x"
     return
 
+# calling the function play_game
 play_game()
 
 
