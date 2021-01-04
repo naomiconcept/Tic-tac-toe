@@ -1,12 +1,12 @@
 # to make this game we will need:
-# a board, display this board,
-#  a function to play the game,
-#  a function to check win: check rows, check columns
-# a function to check tie
+# a board: display this board,
+#  a function: to play the game,
+#  a function: to check win: check rows, check columns
+# a function: to check tie
 # flip player
 
 # Introduction
-print("Hello! \nWelcome to AJ games ^-^")
+print("Hello! \nWelcome to games by NaomiConcept ^-^") # or you could just put any random name to bring your code alive, lol.
 
 # =======================Global Variables ========================
 
@@ -19,17 +19,18 @@ winner = None
 
 # whose turn is it?
 current_player = "x"
+######################################################################## all these above are global variables, you can try look up what global variable is on Google.
 
 board = ["-", "-", "-", "-", "-", "-", "-", "-", "-" ]
 
-# display teh board
+# function to display the board
 def display_board():
     print(board[0] + " | " + board[1] + " | " + board[2])
     print(board[3] + " | " + board[4] + " | " + board[5])
     print(board[6] + " | " + board[7] + " | " + board[8])
 
 
-# start the gameeeee
+# function to start the gameeeee
 def play_game():
 
     # display board game
@@ -54,7 +55,7 @@ def play_game():
         print("Tie!")
 
 
-# to choose position of choice from  player on the board
+# function to choose position of choice from  player on the board
 def handle_turn(player):
     #global player
 
@@ -82,11 +83,13 @@ def handle_turn(player):
     display_board()
 
 
+    # function to check if game is over
 def check_if_game_over():
     check_for_winner()
     check_if_tie()
 
 
+    #function to check for winner
 def check_for_winner():
 
     # set up global variables
@@ -119,7 +122,7 @@ def check_for_winner():
         
     return
 
-
+# a function to check rows for wins
 def check_rows():
     # set up global variables
     global game_still_going
